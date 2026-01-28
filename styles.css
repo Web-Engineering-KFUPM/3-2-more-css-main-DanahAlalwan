@@ -35,10 +35,6 @@
   - Apply a global box-sizing reset using the universal selector (hint use * selector).
 */
 
-:root {
-  --brand: #2563eb;
-  --brand-dark: #1d4ed8;
-}
 
 *,
 *: :before,
@@ -50,10 +46,7 @@
    - Give .site-header & .site-footer a subtle background using var(--card)
    - Make the .tagline class a bit muted (use var(--muted))
 */
-.site-header,
-.site-footer{
-  background: var(--card);
- }
+
 
  .tagline{
   color: var(--muted);
@@ -127,12 +120,6 @@
    - For the .product-grid .item class: Make each item flexible with a flex grow of 1px, flex shrinnk of 1px, and minimum width of 140px, set a minimum height of 90px, apply a soft background and rounded corners, center the content using flexbox, and make the text bold e.g. 700.
 */
 
-.toolbar {
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-}
 
 .btn {
   padding: 0.4rem 0.85rem;
@@ -193,12 +180,17 @@ body {
   --muted: #6b7280;        /* muted text */
   --bg: #f6f7fb;           /* page background */
   --card: #ffffff;         /* card/background surfaces */
+
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
 }
 
 .site-header,
 .site-footer {
   text-align: center;
   padding: 1.25rem;
+
+  background: var(--card);
 }
 
 .container {
@@ -223,6 +215,11 @@ body {
 .toolbar {
   padding: 0.5rem;
   border: 1px dashed rgba(0, 0, 0, 0.1);
+
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .position-stage {
@@ -359,3 +356,5 @@ body {
   z-index: 2;
   transform: translate(18px, -18px);
 }
+
+
