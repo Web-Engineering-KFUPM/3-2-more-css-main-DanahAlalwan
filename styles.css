@@ -37,8 +37,8 @@
 
 
 *,
-*: :before,
-*: :after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -210,6 +210,7 @@ body {
 .box-row {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .toolbar {
@@ -349,12 +350,16 @@ body {
 .stack.a {
   background: rgba(245, 158, 11, 0.7);
   z-index: 1;
+  left: 16px;
+  
 }
 
 .stack.b {
   background: rgba(37, 99, 235, 0.7);
   z-index: 2;
   transform: translate(18px, -18px);
+  left: 96px;
+  transform: none;
 }
 
 
